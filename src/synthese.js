@@ -11,7 +11,16 @@ export function totalCouts(operations) {
 // Exemple : { P1: { nombre: 4, total: 15500 }, P2: { nombre: 3, total: 9500 } }
 // Liste vide : {} (un objet vide).
 export function syntheseParParcelle(operations) {
- 
+  const ab={};
+  for (const operation of operations){
+    if (ab [operation.parcelle]===undefined){
+      ab [operation.parcelle]={nombre:0,total:0}
+      
+    }
+   ab [operation.parcelle].nombre += 1
+   ab [operation.parcelle].total += operation.coutFCFA
+  }
+  return ab;
   throw new Error('TODO : coder syntheseParParcelle dans src/synthese.js');
 }
 
