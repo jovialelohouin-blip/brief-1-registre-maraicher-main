@@ -87,4 +87,19 @@ export function creerOperation(saisie) {
 // Renvoie les erreurs : [] si l'opération a été ajoutée ; sinon les messages, et rien n'est ajouté.
 export function ajouterOperation(operations, saisie) {
  
+    
+   const erreurs = verifierOperation(saisie, operations);
+  if (erreurs.length > 0) {
+    return erreurs;
+  }
+
+  operations.push(creerOperation(saisie));
+  return [];
+
+
+  if (operations.length === 0) {
+    return 'Aucune opération enregistrée.';
+  }
+
+  return operations.map(formaterOperation).join('\n');
 }
