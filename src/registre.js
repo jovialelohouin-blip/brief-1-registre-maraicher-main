@@ -23,7 +23,8 @@ export function listerOperations(operations) {
 
 // Renvoie l'opération qui a cet identifiant, ou undefined si elle n'existe pas.
 export function trouverParId(operations, id) {
-  
+   return operations.find((operation) => operation.id === id);
+
 }
 
 // Contrôle une saisie AVANT de l'ajouter. Tous les champs arrivent sous forme de TEXTE :
