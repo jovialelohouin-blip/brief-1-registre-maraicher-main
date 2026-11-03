@@ -29,7 +29,11 @@ export function filtrerParCulture(operations, culture) {
 // Renvoie une COPIE triée par coût croissant, avec un comparateur numérique.
 // Deux opérations de même coût gardent leur ordre d'origine. Le tableau reçu ne doit pas changer d'ordre.
 export function trierParCout(operations) {
-   
+    const resultat = [...operations];
+
+  resultat.sort((a, b) => a.coutFCFA - b.coutFCFA);
+
+  return resultat;
 
   throw new Error('TODO : coder trierParCout dans src/recherche.js');
 }
