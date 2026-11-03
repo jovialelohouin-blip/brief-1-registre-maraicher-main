@@ -19,6 +19,9 @@ export function filtrerParParcelle(operations, parcelle) {
 // Renvoie un NOUVEAU tableau avec les opérations de cette culture (éventuellement vide).
 export function filtrerParCulture(operations, culture) {
   
+ return operations.filter(function(operation) {
+    return operation.culture === culture;
+  });
   
   throw new Error('TODO : coder filtrerParCulture dans src/recherche.js');
 }
