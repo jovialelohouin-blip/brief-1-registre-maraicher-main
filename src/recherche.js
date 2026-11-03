@@ -42,5 +42,12 @@ export function trierParCout(operations) {
 // Deux opérations de même date gardent leur ordre d'origine. Le tableau reçu ne doit pas changer d'ordre.
 export function trierParDate(operations) {
    
+  const resultat = [...operations];
+
+  resultat.sort((a, b) => {
+    return a.date.localeCompare(b.date);
+  });
+
+  return resultat;
   throw new Error('TODO : coder trierParDate dans src/recherche.js');
 }
