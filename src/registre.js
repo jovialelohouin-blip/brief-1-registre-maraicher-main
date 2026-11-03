@@ -36,7 +36,36 @@ export function trouverParId(operations, id) {
 // · coutFCFA nombre positif ou nul.
 export function verifierOperation(saisie, operations) {
   
-    
+    const erreurs = [];
+
+  if (saisie.id.trim() === '') {
+    erreurs.push("L'identifiant est obligatoire.");
+  } else if (trouverParId(operations, saisie.id) !== undefined) {
+    erreurs.push('Cet identifiant existe déjà.');
+  }
+
+  if (estDateValide(saisie.date) === false) {
+    erreurs.push('La date doit être valide au format AAAA-MM-JJ.');
+  }
+
+  if (saisie.parcelle.trim() === '') {
+    erreurs.push('La parcelle est obligatoire.');
+  }
+
+  if (saisie.culture.trim() === '') {
+    erreurs.push('La culture est obligatoire.');
+  }
+
+  if (OPERATIONS.includes(saisie.operation) === false) {
+    erreurs.push("L'opération n'est pas autorisée.");
+  }
+  
+  const cout = versNombre(saisie.coutFCFA);
+  if (Number.isNaN(cout) || cout < 0) {
+    erreurs.push('Le coût doit être un nombre positif ou nul (en FCFA).');
+  }
+
+  return erreurs;
 
 }
 
