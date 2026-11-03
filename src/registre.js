@@ -8,17 +8,21 @@ export const OPERATIONS = ['semis', 'arrosage', 'désherbage', 'repiquage', 'ré
 // Renvoie une ligne de texte qui décrit l'opération.
 // Exemple : 'O03 | 2026-10-21 | P1 | tomate | arrosage | 2000 FCFA'
 export function formaterOperation(operation) {
+      return `${operation.id} | ${operation.date} | ${operation.parcelle} | ${operation.culture} | ${operation.operation} | ${operation.coutFCFA} FCFA`;
+
   throw new Error('TODO : coder formaterOperation dans src/registre.js');
 }
 
 // Renvoie un texte avec une opération par ligne (lignes séparées par '\n'),
 // ou 'Aucune opération enregistrée.' si la liste est vide.
 export function listerOperations(operations) {
+   
   throw new Error('TODO : coder listerOperations dans src/registre.js');
 }
 
 // Renvoie l'opération qui a cet identifiant, ou undefined si elle n'existe pas.
 export function trouverParId(operations, id) {
+ 
   throw new Error('TODO : coder trouverParId dans src/registre.js');
 }
 
@@ -30,6 +34,7 @@ export function trouverParId(operations, id) {
 // obligatoires (n'importe quel texte non vide) · operation présente dans OPERATIONS
 // · coutFCFA nombre positif ou nul.
 export function verifierOperation(saisie, operations) {
+   
   throw new Error('TODO : coder verifierOperation dans src/registre.js');
 }
 
