@@ -28,6 +28,14 @@ export function syntheseParParcelle(operations) {
 // Exemple : { min: 1500, max: 8000 }
 export function coutMinMax(operations) {
  
+   if (operations.length===0){
+    return null
+  }
+  const couts = operations.map(operation=>operation.coutFCFA);
+  return{
+    min: Math.min(...couts),
+    max: Math.max(...couts)
+  }
   throw new Error('TODO : coder coutMinMax dans src/synthese.js');
 }
  
