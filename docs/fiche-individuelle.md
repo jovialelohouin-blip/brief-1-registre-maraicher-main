@@ -1,6 +1,6 @@
 # Fiche individuelle
 
-> Une page, avant la livraison. Prénom, nom, compte GitHub : ✏️
+> Une page, avant la livraison. Prénom, nom, compte GitHub : 
 
 Lou Freshnelle Marie Joviale Lohouin,jovialelohouin-blip.
 
@@ -10,4 +10,4 @@ J’ai travaillé sur les fonctionnalités du fichier app.js, notamment la fonct
 J’ai rencontré des difficultés dans la compréhension et l’utilisation de certaines fonctions JavaScript, notamment find(), filter() et reduce(). Pour les surmonter, j’ai repris les notions étape par étape, étudié des exemples et effectué plusieurs tests afin de mieux comprendre leur fonctionnement.
 
 3. **L'entraide** (qui m'a aidé, qui j'ai aidé, sur quoi) : ✏️
-J’ai travaillé avec mes camarades sur le fichier app.js. Nous avons échangé nos idées, partagé nos connaissances et collaboré à la mise en place des différentes fonctionnalités du programme. Cette collaboration m’a permis de mieux comprendre le projet et d’apprendre de nouvelles choses.
+J’ai travaillé avec mes camarades(soumahoro cheick tidiane,kamagate junior,abo kouame josue,mamadou evelyne,Zamble bi boti marc) sur le fichier app.js. Nous avons échangé nos idées, partagé nos connaissances et collaboré à la mise en place des différentes fonctionnalités du programme. Cette collaboration m’a permis de mieux comprendre le projet et d’apprendre de nouvelles choses.

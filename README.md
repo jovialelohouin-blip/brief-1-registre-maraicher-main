@@ -3,8 +3,7 @@
 > Projet individuel du SAS DFS, brief 1 (sujet : [SUJET.md](SUJET.md)). Remplacez chaque ✏️ par votre texte, puis supprimez cette ligne.
 
 ## Contexte
-
-✏️ *En cinq à huit phrases : qui utilise l'outil (son métier, son geste professionnel), son besoin, ce qu'il saisit, ce que le programme lui affiche, ce que l'outil ne fait pas.*
+Le régistre des opérations maraîchères est destiné à la responsable d’une exploitation maraîchère pédagogique. Elle a besoin de remplacer son carnet papier par un outil numérique pour mieux suivre les opérations et réduire les oublis. Elle saisit l’identifiant, la date, la parcelle, la culture, le type d’opération et le coût en FCFA. Le programme affiche les opérations enregistrées et permet de les rechercher et de les trier. Il calcule le total des dépenses, les dépenses par parcelle ainsi que les coûts minimum et maximum. Cependant, il ne permet pas d’enregistrer les revenus ni de calculer la rentabilité de l’exploitation. Il ne vérifie pas non plus si la culture saisie correspond réellement à la parcelle.
 
 ## Prérequis et lancement
 
@@ -23,22 +22,24 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ✏️ *Cochez seulement ce qui marche : `- [x]`.*
 
-- [ ] Données lues et enregistrées dans `donnees/operations.json`
-- [ ] Ajouter une opération, saisies invalides refusées sans arrêter le programme
-- [ ] Lister les opérations, message si le registre est vide
-- [ ] Rechercher par identifiant ou par parcelle ; filtrer par culture
-- [ ] Trier par coût ou par date
-- [ ] Synthèse : total, nombre et total par parcelle, coût minimum et maximum
-- [ ] Bonus : supprimer et modifier une opération (choix 6 et 7)
-- [ ] Bonus : tri par coût décroissant, parcelle la plus coûteuse
+- [x] Données lues et enregistrées dans `donnees/operations.json`
+- [x] Ajouter une opération, saisies invalides refusées sans arrêter le programme
+- [x] Lister les opérations, message si le registre est vide
+- [x] Rechercher par identifiant ou par parcelle ; filtrer par culture
+- [x] Trier par coût ou par date
+- [x] Synthèse : total, nombre et total par parcelle, coût minimum et maximum
+- [x] Bonus : supprimer et modifier une opération (choix 6 et 7)
+- [x] Bonus : tri par coût décroissant, parcelle la plus coûteuse
 
 ## Données
 
-✏️ *Le fichier, le nombre d'opérations, les champs (voir [docs/dictionnaire-donnees.md](docs/dictionnaire-donnees.md)), les unités. Rappelez qu'elles sont fictives.*
+Les données sont enregistrées dans le fichier donnees/operations.json, qui contient 10 opérations fictives. Chaque opération comporte les champs suivants : identifiant (id), date, parcelle, culture, type d’opération et coût (coutFCFA). La date utilise le format AAAA-MM-JJ et les coûts sont exprimés en FCFA. Les informations utilisées sont des exemples fictifs et ne représentent pas les données d’une réelle exploitation maraîchère.
 
 ## Limites
 
-✏️ *Au moins trois. Par exemple : le registre enregistre des dépenses, pas les revenus, il ne mesure donc pas la rentabilité.*
+Le registre enregistre des dépenses, pas les revenus, il ne mesure donc pas la rentabilité.
+Il ne vérifie pas non plus si la culture saisie correspond réellement à la parcelle.
+L'id ne suit pas forcément une strusture bien définie.
 
 ## Documents
 
@@ -46,4 +47,5 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Auteur
 
-✏️ *Prénom NOM, compte GitHub. Entraide : avec qui, sur quoi.*
+Lou Freshnelle Marie Joviale Lohouin,jovialelohouin-blip.
+J'ai travaillé avec des amis sur app.js ,nous avons collaboré à la mise en place du menu principal,à l'organisation des différentes fonctionnalités et à leur intégration dans l'application.
